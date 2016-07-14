@@ -13,37 +13,51 @@ function CalcularPrecio ()
  var cantidad=document.getElementById('Cantidad').value;
  //alert(cantidadLamparas);
  var marca=document.getElementById('Marca').value;
- 
- 
+ var precioBruto=35*cantidad;
+
  switch (marca)
  	{
  	case "ArgentinaLuz":
  		if (cantidad==3)
  			{
- 				var precioBruto=35*cantidad;
- 				var descuento=0.85;
- 				var precioNeto=precioBruto*descuento;
- 				var precioDescuento=document.getElementById('precioDescuento').value = precioNeto;
+ 				
+ 				descuento=0.85;
+ 				
  			}
  			else
  			{
 				if (cantidad==4)
  				{
- 					var precioBruto=35*cantidad;
- 					var descuento=0.75;
- 					var precioNeto=precioBruto*descuento;
- 					var precioDescuento=document.getElementById('precioDescuento').value = precioNeto;
+ 					
+ 					descuento=0.75;
+ 						
  				}
  				else
  					{
  						if (cantidad==5)
- 							var precioBruto=35*cantidad;
- 							var descuento=0.60;
- 							var precioNeto=precioBruto*descuento;
- 							var precioDescuento=document.getElementById('precioDescuento').value = precioNeto;
+ 							
+ 							descuento=0.60;
+ 									
  					}
  			}
  	break;
- 	}//switch (marca)
+ 	
+ 	
+ 	case "FelipeLamparas":
+ 		if (cantidad==3)
+ 		{
+ 			descuento=0.90;
+ 		}
+ 		else
+ 			{
+ 				if (cantidad==4)
+ 				{
+ 					descuento=0.75;
+ 				}
+ 			}
+ 	break;
+    }//switch (marca)
+    var precioNeto=precioBruto*descuento;
+ 	var precioDescuento=document.getElementById('precioDescuento').value = precioNeto;
 
 }//function CalcularPrecio ()
