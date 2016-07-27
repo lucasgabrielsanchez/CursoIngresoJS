@@ -9,6 +9,11 @@ function Mostrar()
 	{
 		contador++;
 		numero=prompt("ingrese un número")
+		while(isNaN(numero))
+			{
+				alert("No es un número");
+				numero=prompt("Ingrese un número válido");
+			}
 		acumulador=acumulador+parseInt(numero)
 	}
 	
