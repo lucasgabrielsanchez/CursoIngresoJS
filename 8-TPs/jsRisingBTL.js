@@ -11,10 +11,10 @@ function ComenzarIngreso ()
 {
  //validación de edad
  var edad=prompt("Ingrese su edad entre 18 y 90 años");
- while(edad<18 || edad>90)
+ while(edad<18 || edad>90 || isNaN(edad))
  	{
  		alert("Edad no permitida");
- 		edad=prompt("Vuelva a ingresar su edad")=edad;
+ 		edad=prompt("Vuelva a ingresar su edad");
  	}
  document.getElementById('Edad').value=edad;
 
@@ -65,7 +65,7 @@ function ComenzarIngreso ()
 
  	//Validación de legajo
  	var legajo=prompt("Ingrese número de legajo, el cual debe tener 4 dígitos y no debe comenzar con 0");
- 	(while)
+ 	
 
 
  	//Validación de nacionalidad
