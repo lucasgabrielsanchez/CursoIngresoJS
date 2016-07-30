@@ -19,7 +19,6 @@ function Mostrar()
 	{
 		contador++
 		//console.log(contador);
-
 		if(contador==limite)
 			{
 				break;
@@ -27,10 +26,11 @@ function Mostrar()
 
 		random = Math.floor(Math.random()*10)+1;
 
-		if(contador4=5)
+		while(random==5 && contador5> (limite*0.05))
 			{
-				break;
+				random = Math.floor(Math.random()*10)+1;
 			}
+
 
 		switch(random)
 			{
