@@ -11,10 +11,10 @@ function ComenzarIngreso ()
 {
  //validación de edad
  var edad=prompt("Ingrese su edad entre 18 y 90 años");
- while(edad<18 || edad>90 || isNaN(edad))
+ while(edad<18 || edad>90)
  	{
  		alert("Edad no permitida");
- 		edad=prompt("Vuelva a ingresar su edad");
+ 		edad=prompt("Vuelva a ingresar su edad")=edad;
  	}
  document.getElementById('Edad').value=edad;
 
@@ -33,7 +33,7 @@ function ComenzarIngreso ()
  	{
  	alert("Estado civil no permitido");
  	estado=prompt("ingrese 1, 2, 3 o 4");
- 	}
+ 	}	
  	switch(estado)
  	{
  		case "1":
@@ -65,7 +65,11 @@ function ComenzarIngreso ()
 
  	//Validación de legajo
  	var legajo=prompt("Ingrese número de legajo, el cual debe tener 4 dígitos y no debe comenzar con 0");
- 	
+ 	while(legajo<1000 || legajo>9999)
+ 		{
+ 			legajo=prompt("Número de legajo inválido, vuelva a ingresarlo");
+
+ 		}
 
 
  	//Validación de nacionalidad

@@ -9,7 +9,6 @@ de no ser igual se debe informar si “falta…”  para llegar al número secre
 */
 var numeroSecreto; 
 var contadorIntentos=0;
-var numeroIngresado
 
 
 function comenzar()
@@ -25,8 +24,7 @@ function comenzar()
 
 function verificar()
 {
-
-	numeroIngresado=document.getElementById('numero').value;
+	var numeroIngresado=document.getElementById('numero').value;
 
 	if (numeroSecreto!=numeroIngresado)
 		{
